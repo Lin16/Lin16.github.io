@@ -15,13 +15,13 @@
         <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
 &lt;p&gt;用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。&lt;br&gt;
 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。&lt;/p&gt;
-&lt;h1 id=&#34;環境&#34;&gt;環境&lt;/h1&gt;
+&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 &lt;p&gt;OS: Windows 10 or 11&lt;br&gt;
 git: 2.40
 Hugo: &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.117.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo_extended_0.117.0_windows-amd64.zip&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;步驟&#34;&gt;步驟&lt;/h1&gt;
-&lt;h2 id=&#34;部屬hugo-網站&#34;&gt;部屬Hugo 網站&lt;/h2&gt;
+&lt;h2 id=&#34;步驟&#34;&gt;步驟&lt;/h2&gt;
+&lt;h3 id=&#34;部屬hugo-網站&#34;&gt;部屬Hugo 網站&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;前往&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo下載 hugo.exe 的 ZIP 檔&lt;/a&gt;&lt;/li&gt;
@@ -60,7 +60,7 @@ Hugo: &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/rele
     &gt;官網Themes&lt;/a&gt;有很多可以選&lt;/li&gt;
 &lt;li&gt;開啟瀏覽器，訪問http://localhost:1313/，順利的話可以看到套用主題的網站&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;上傳至github&#34;&gt;上傳至GitHub&lt;/h2&gt;
+&lt;h3 id=&#34;上傳至github&#34;&gt;上傳至GitHub&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;註冊&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;帳號&lt;/li&gt;
@@ -83,7 +83,7 @@ Hugo: &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/rele
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; blog
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 建置網站，完成檔檔案會放置於「public」資料夾&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo  --cleanDestinationDir
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
@@ -95,7 +95,7 @@ Hugo: &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/rele
 &lt;/div&gt;&lt;ol&gt;
 &lt;li&gt;開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;參考資料&#34;&gt;參考資料&lt;/h1&gt;
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.darkthread.net/blog/tech-doc-with-hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;用 Markdown 寫技術文件 - 編輯工具與平台選擇&lt;/a&gt;&lt;/li&gt;

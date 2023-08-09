@@ -33,7 +33,7 @@ git: 2.40 Hugo: hugo_extended_0.117.0_windows-amd64.zip
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -254,8 +254,14 @@ git: 2.40 Hugo: hugo_extended_0.117.0_windows-amd64.zip
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#部屬hugo-網站">部屬Hugo 網站</a></li>
-    <li><a href="#上傳至github">上傳至GitHub</a></li>
+    <li><a href="#環境">環境</a></li>
+    <li><a href="#步驟">步驟</a>
+      <ol>
+        <li><a href="#部屬hugo-網站">部屬Hugo 網站</a></li>
+        <li><a href="#上傳至github">上傳至GitHub</a></li>
+      </ol>
+    </li>
+    <li><a href="#參考資料">參考資料</a></li>
   </ol>
 </nav>
         </div>
@@ -342,13 +348,13 @@ git: 2.40 Hugo: hugo_extended_0.117.0_windows-amd64.zip
     <h1 id="前言">前言</h1>
 <p>用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。<br>
 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。</p>
-<h1 id="環境">環境</h1>
+<h2 id="環境">環境</h2>
 <p>OS: Windows 10 or 11<br>
 git: 2.40
 Hugo: <a class="link" href="https://github.com/gohugoio/hugo/releases/tag/v0.117.0"  target="_blank" rel="noopener"
     >hugo_extended_0.117.0_windows-amd64.zip</a></p>
-<h1 id="步驟">步驟</h1>
-<h2 id="部屬hugo-網站">部屬Hugo 網站</h2>
+<h2 id="步驟">步驟</h2>
+<h3 id="部屬hugo-網站">部屬Hugo 網站</h3>
 <ol>
 <li>前往<a class="link" href="https://gohugo.io/installation/windows/"  target="_blank" rel="noopener"
     >Hugo下載 hugo.exe 的 ZIP 檔</a></li>
@@ -387,7 +393,7 @@ Hugo: <a class="link" href="https://github.com/gohugoio/hugo/releases/tag/v0.117
     >官網Themes</a>有很多可以選</li>
 <li>開啟瀏覽器，訪問http://localhost:1313/，順利的話可以看到套用主題的網站</li>
 </ol>
-<h2 id="上傳至github">上傳至GitHub</h2>
+<h3 id="上傳至github">上傳至GitHub</h3>
 <ol>
 <li>註冊<a class="link" href="https://github.com/"  target="_blank" rel="noopener"
     >GitHub</a>帳號</li>
@@ -410,7 +416,7 @@ Hugo: <a class="link" href="https://github.com/gohugoio/hugo/releases/tag/v0.117
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl"><span class="nb">cd</span> blog
 </span></span><span class="line"><span class="cl"><span class="c1"># 建置網站，完成檔檔案會放置於「public」資料夾</span>
-</span></span><span class="line"><span class="cl">hugo
+</span></span><span class="line"><span class="cl">hugo  --cleanDestinationDir
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> public
 </span></span><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git add .
@@ -422,7 +428,7 @@ Hugo: <a class="link" href="https://github.com/gohugoio/hugo/releases/tag/v0.117
 </div><ol>
 <li>開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站</li>
 </ol>
-<h1 id="參考資料">參考資料</h1>
+<h2 id="參考資料">參考資料</h2>
 <ul>
 <li><a class="link" href="https://blog.darkthread.net/blog/tech-doc-with-hugo/"  target="_blank" rel="noopener"
     >用 Markdown 寫技術文件 - 編輯工具與平台選擇</a></li>
