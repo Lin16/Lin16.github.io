@@ -6,11 +6,11 @@
 說明 首先透過Invoke-WebRequest可以取得系統狀況。 接者使用ConvertFrom-Json轉為Json，後續就可以判斷服務當前狀況。
 範例程式如下:
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #num 輸入機器數量 function CheckService($num) { # 迴圈處理 for($i=1;$i -le ($num);$i&#43;&#43;) { Write-Host &amp;#34;編號:$($i)開始&amp;#34; # 準備網址 $uri= &amp;#34;http:/XXX.XXX.XXX.&amp;#34; &#43; $i # Check $response = Invoke-WebRequest -Uri $uri $jsonObj = ConvertFrom-Json $([String]::new($response.Content)) if($jsonObj.status -eq &amp;#34;red&amp;#34;){ Write-Host jsonObj.status } Write-Host &amp;#34;----------------------------------------&amp;#34; } Write-Host &amp;#34;Check End&amp;#34; } '>
-<title>Monitor Service Status</title>
+<title>透過PowerShell監控服務運行狀態</title>
 
 <link rel='canonical' href='https://Lin16.github.io/p/monitor-service-status/'>
 
-<link rel="stylesheet" href="/scss/style.min.3734c7f98abeeca94a8b1ad4e135cedec3df7e5eba8509523ce2b20ba1503536.css"><meta property='og:title' content='Monitor Service Status'>
+<link rel="stylesheet" href="/scss/style.min.3734c7f98abeeca94a8b1ad4e135cedec3df7e5eba8509523ce2b20ba1503536.css"><meta property='og:title' content='透過PowerShell監控服務運行狀態'>
 <meta property='og:description' content='需求 有一天有大量內部臨時啟用系統需要偵測服務狀態，由於數量太多因此考量是否能由程式代勞。
 臨時系統有提供API來查詢系統狀況且回傳格式為JSON，那就寫一段PowerShell來試試。
 說明 首先透過Invoke-WebRequest可以取得系統狀況。 接者使用ConvertFrom-Json轉為Json，後續就可以判斷服務當前狀況。
@@ -18,8 +18,8 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 #num 輸入機器數量 function CheckService($num) { # 迴圈處理 for($i=1;$i -le ($num);$i&#43;&#43;) { Write-Host &amp;#34;編號:$($i)開始&amp;#34; # 準備網址 $uri= &amp;#34;http:/XXX.XXX.XXX.&amp;#34; &#43; $i # Check $response = Invoke-WebRequest -Uri $uri $jsonObj = ConvertFrom-Json $([String]::new($response.Content)) if($jsonObj.status -eq &amp;#34;red&amp;#34;){ Write-Host jsonObj.status } Write-Host &amp;#34;----------------------------------------&amp;#34; } Write-Host &amp;#34;Check End&amp;#34; } '>
 <meta property='og:url' content='https://Lin16.github.io/p/monitor-service-status/'>
 <meta property='og:site_name' content='Max Lin&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Other Tag' /><meta property='article:published_time' content='2023-08-11T15:13:06&#43;08:00'/><meta property='article:modified_time' content='2023-08-11T15:13:06&#43;08:00'/>
-<meta name="twitter:title" content="Monitor Service Status">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='PowerShell' /><meta property='article:tag' content='monitors' /><meta property='article:published_time' content='2023-08-11T15:13:06&#43;08:00'/><meta property='article:modified_time' content='2023-08-11T15:13:06&#43;08:00'/>
+<meta name="twitter:title" content="透過PowerShell監控服務運行狀態">
 <meta name="twitter:description" content="需求 有一天有大量內部臨時啟用系統需要偵測服務狀態，由於數量太多因此考量是否能由程式代勞。
 臨時系統有提供API來查詢系統狀況且回傳格式為JSON，那就寫一段PowerShell來試試。
 說明 首先透過Invoke-WebRequest可以取得系統狀況。 接者使用ConvertFrom-Json轉為Json，後續就可以判斷服務當前狀況。
@@ -253,8 +253,8 @@ if (!doNotTrack) {
     
     <header class="article-category">
         
-            <a href="/categories/other-category/" >
-                Other Category
+            <a href="/categories/powershell/" >
+                PowerShell
             </a>
         
     </header>
@@ -262,7 +262,7 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/monitor-service-status/">Monitor Service Status</a>
+            <a href="/p/monitor-service-status/">透過PowerShell監控服務運行狀態</a>
         </h2>
     
         
@@ -378,7 +378,9 @@ if (!doNotTrack) {
     
     <section class="article-tags">
         
-            <a href="/tags/other-tag/">Other Tag</a>
+            <a href="/tags/powershell/">PowerShell</a>
+        
+            <a href="/tags/monitors/">monitors</a>
         
     </section>
 
@@ -404,28 +406,6 @@ if (!doNotTrack) {
     
 
     
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">相關文章</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="">
-    <a href="/p/list-combine/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">[C#]多個List 資料進行合併(combine)</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
 
      
     
