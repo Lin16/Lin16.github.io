@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <copyright>Max Lin&#39;s Blog</copyright>
-        <lastBuildDate>Thu, 10 Aug 2023 00:04:32 +0800</lastBuildDate><atom:link href="https://Lin16.github.io/tags/github-pages/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 13 Sep 2024 12:57:24 +0800</lastBuildDate><atom:link href="https://Lin16.github.io/tags/github-pages/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>部屬Hugo到Github Pages</title>
         <link>https://Lin16.github.io/p/hugo-on-github-pages/</link>
         <pubDate>Thu, 10 Aug 2023 00:04:32 +0800</pubDate>
@@ -18,7 +18,7 @@
 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。&lt;/p&gt;
 &lt;h2 id=&#34;環境&#34;&gt;環境
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;OS: Windows 10 or 11&lt;/li&gt;
+&lt;li&gt;OS: Windows 11&lt;/li&gt;
 &lt;li&gt;git: 2.40&lt;/li&gt;
 &lt;li&gt;Hugo: &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases/tag/v0.117.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo_extended_0.117.0_windows-amd64.zip&lt;/a&gt;&lt;/li&gt;
