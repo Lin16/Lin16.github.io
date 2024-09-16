@@ -2,23 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Lin16.github.io/p/last-update-time/</loc>
-    <lastmod>2024-09-13T13:12:22+08:00</lastmod>
+    <loc>https://Lin16.github.io/p/install/</loc>
+    <lastmod>2024-09-16T12:36:25+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/categories/</loc>
-    <lastmod>2024-09-13T13:12:22+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/tags/hugo/</loc>
-    <lastmod>2024-09-13T13:12:22+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/categories/hugo/</loc>
-    <lastmod>2024-09-13T13:12:22+08:00</lastmod>
+    <lastmod>2024-09-16T12:36:25+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/post/</loc>
-    <lastmod>2024-09-13T13:12:22+08:00</lastmod>
+    <lastmod>2024-09-16T12:36:25+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/tags/</loc>
-    <lastmod>2024-09-13T13:12:22+08:00</lastmod>
+    <lastmod>2024-09-16T12:36:25+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/tags/ubuntu-server/</loc>
+    <lastmod>2024-09-16T12:36:25+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/categories/ubuntu-server/</loc>
+    <lastmod>2024-09-16T12:36:25+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/p/last-update-time/</loc>
+    <lastmod>2024-09-13T15:54:49+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/tags/hugo/</loc>
+    <lastmod>2024-09-13T15:54:49+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/categories/hugo/</loc>
+    <lastmod>2024-09-13T15:54:49+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/tags/monitor/</loc>
     <lastmod>2024-09-13T12:57:24+08:00</lastmod>
@@ -33,10 +42,10 @@
     <lastmod>2024-09-13T12:57:24+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/tags/hugo-theme/</loc>
-    <lastmod>2024-09-13T12:57:24+08:00</lastmod>
+    <lastmod>2024-09-13T15:54:49+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/p/theme-stack-adjusted/</loc>
-    <lastmod>2024-09-13T12:57:24+08:00</lastmod>
+    <lastmod>2024-09-13T15:54:49+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/p/list-combine/</loc>
     <lastmod>2024-09-13T12:57:24+08:00</lastmod>

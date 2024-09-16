@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前言\r用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。\n環境\rOS: Windows 11 git: 2.40 Hugo: hugo_extended_0.117.0_windows-amd64.zip 步驟\r部屬Hugo 網站\r前往Hugo下載 hugo.exe 的 ZIP 檔 將ZIP檔解壓縮後取得「hugo.exe」，接者放置到準備的位置，例如:C:\\Hugo\\bin\\ 前往環境變數並於Path新稱值「C:\\Hugo\\bin\\」 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 11 # 檢查版本以及是否正確安裝 hugo version # 建立網站，這邊命名為 blog hugo new site blog cd blog # 下載主題 git clone https://github.com/vividvilla/ezhil.git .\\themes\\ezhil hugo new posts\\first-post.md echo theme = &#39;ezhil&#39; &gt;&gt; config.toml # -D 顯示草稿 hugo server -D 註:預設是沒有主題(Themes)，需要自己載，官網Themes有很多可以選 開啟瀏覽器，訪問http://localhost:1313/，順利的話可以看到套用主題的網站 上傳至GitHub\r註冊GitHub帳號 建立一個Repository Repository name: 填入「github-username.github.io」 ，注意github-username是要替換成GitHub帳號的名稱 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 cd blog # 建置網站，完成檔檔案會放置於「public」資料夾 hugo --cleanDestinationDir cd public git init git add . git branch -M main git remote add origin https://github.com/github-username/github-username.github.io.git git push -u origin main 開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站 參考資料\r用 Markdown 寫技術文件 - 編輯工具與平台選擇 Hugo 貼身打造個人部落格 ">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前言\r用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。\n環境\rOS: Windows 11 git: 2.40 Hugo: hugo_extended_0.134.2_windows-amd64 步驟\r部屬Hugo 網站\r前往Hugo下載 hugo.exe 的 ZIP 檔 或是Hugo GitHub Releases頁面。 可以選擇一般版本的 Hugo 或是 Hugo Extended，兩個版本的差異在於有沒有內建支援SCSS、SASS。\n註: 建議直接選擇 Extended 版本，因為有許多的模板、主題都會用到 SCSS 或 SASS，可以省得之後再自己手動安裝的麻煩。\nex: hugo_extended_0.134.2_windows-amd64 將ZIP檔解壓縮後取得「hugo.exe」，接者放置到準備的位置，例如:C:\\Hugo\\bin\\ 前往環境變數並於Path新稱值「C:\\Hugo\\bin\\」 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 檢查Hugo版本以及環境變數是否正設定 hugo version # 建立網站，這邊命名為 blog hugo new site blog # 進入資料夾 cd blog # 下載要使用的主題，ex: hugo-theme-stack # 註:預設是沒有主題(Themes)，需要自己載，[官網Themes](https://themes.gohugo.io/)有很多可以選 git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack # option: 複製並採用 hugo-theme-stack範例中的hugo.yaml檔案及設定，取代hugo.toml # option: 複製 archetypes的檔案 # option: 複製既有文章 # option: 建立第一個文章 hugo new post\\python\\install\\install.md #啟動網站，-D 顯示草稿 hugo server -D 開啟瀏覽器，預設網址http://localhost:1313/，順利的話可以看到網站 上傳至GitHub\r註冊GitHub帳號 建立一個Repository Repository name: 填入「github-username.github.io」 ，注意github-username是要替換成GitHub帳號的名稱 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 cd blog # 建置網站，完成檔檔案會放置於「public」資料夾 hugo --cleanDestinationDir cd public git init git add . git commit -m &#34;first commit&#34; git branch -M main git remote add origin https://github.com/github-username/github-username.github.io.git git push -u origin main 開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站 參考資料\r用 Markdown 寫技術文件 - 編輯工具與平台選擇 Hugo 貼身打造個人部落格 ">
 <title>部屬Hugo到Github Pages</title>
 
 <link rel='canonical' href='https://Lin16.github.io/p/hugo-on-github-pages/'>
 
 <link rel="stylesheet" href="/scss/style.min.f3058a05457fecc847bd81e13d38854bd696f24490d6ecd15d7215bb1ef775f4.css"><meta property='og:title' content="部屬Hugo到Github Pages">
-<meta property='og:description' content="前言\r用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。\n環境\rOS: Windows 11 git: 2.40 Hugo: hugo_extended_0.117.0_windows-amd64.zip 步驟\r部屬Hugo 網站\r前往Hugo下載 hugo.exe 的 ZIP 檔 將ZIP檔解壓縮後取得「hugo.exe」，接者放置到準備的位置，例如:C:\\Hugo\\bin\\ 前往環境變數並於Path新稱值「C:\\Hugo\\bin\\」 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 11 # 檢查版本以及是否正確安裝 hugo version # 建立網站，這邊命名為 blog hugo new site blog cd blog # 下載主題 git clone https://github.com/vividvilla/ezhil.git .\\themes\\ezhil hugo new posts\\first-post.md echo theme = &#39;ezhil&#39; &gt;&gt; config.toml # -D 顯示草稿 hugo server -D 註:預設是沒有主題(Themes)，需要自己載，官網Themes有很多可以選 開啟瀏覽器，訪問http://localhost:1313/，順利的話可以看到套用主題的網站 上傳至GitHub\r註冊GitHub帳號 建立一個Repository Repository name: 填入「github-username.github.io」 ，注意github-username是要替換成GitHub帳號的名稱 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 cd blog # 建置網站，完成檔檔案會放置於「public」資料夾 hugo --cleanDestinationDir cd public git init git add . git branch -M main git remote add origin https://github.com/github-username/github-username.github.io.git git push -u origin main 開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站 參考資料\r用 Markdown 寫技術文件 - 編輯工具與平台選擇 Hugo 貼身打造個人部落格 ">
+<meta property='og:description' content="前言\r用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。\n環境\rOS: Windows 11 git: 2.40 Hugo: hugo_extended_0.134.2_windows-amd64 步驟\r部屬Hugo 網站\r前往Hugo下載 hugo.exe 的 ZIP 檔 或是Hugo GitHub Releases頁面。 可以選擇一般版本的 Hugo 或是 Hugo Extended，兩個版本的差異在於有沒有內建支援SCSS、SASS。\n註: 建議直接選擇 Extended 版本，因為有許多的模板、主題都會用到 SCSS 或 SASS，可以省得之後再自己手動安裝的麻煩。\nex: hugo_extended_0.134.2_windows-amd64 將ZIP檔解壓縮後取得「hugo.exe」，接者放置到準備的位置，例如:C:\\Hugo\\bin\\ 前往環境變數並於Path新稱值「C:\\Hugo\\bin\\」 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 檢查Hugo版本以及環境變數是否正設定 hugo version # 建立網站，這邊命名為 blog hugo new site blog # 進入資料夾 cd blog # 下載要使用的主題，ex: hugo-theme-stack # 註:預設是沒有主題(Themes)，需要自己載，[官網Themes](https://themes.gohugo.io/)有很多可以選 git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack # option: 複製並採用 hugo-theme-stack範例中的hugo.yaml檔案及設定，取代hugo.toml # option: 複製 archetypes的檔案 # option: 複製既有文章 # option: 建立第一個文章 hugo new post\\python\\install\\install.md #啟動網站，-D 顯示草稿 hugo server -D 開啟瀏覽器，預設網址http://localhost:1313/，順利的話可以看到網站 上傳至GitHub\r註冊GitHub帳號 建立一個Repository Repository name: 填入「github-username.github.io」 ，注意github-username是要替換成GitHub帳號的名稱 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 cd blog # 建置網站，完成檔檔案會放置於「public」資料夾 hugo --cleanDestinationDir cd public git init git add . git commit -m &#34;first commit&#34; git branch -M main git remote add origin https://github.com/github-username/github-username.github.io.git git push -u origin main 開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站 參考資料\r用 Markdown 寫技術文件 - 編輯工具與平台選擇 Hugo 貼身打造個人部落格 ">
 <meta property='og:url' content='https://Lin16.github.io/p/hugo-on-github-pages/'>
 <meta property='og:site_name' content='Max Lin&#39;s Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:tag' content='Github' /><meta property='article:tag' content='Github Pages' /><meta property='article:published_time' content='2023-08-10T00:04:32&#43;08:00'/><meta property='article:modified_time' content='2024-09-13T12:57:24&#43;08:00'/>
 <meta name="twitter:title" content="部屬Hugo到Github Pages">
-<meta name="twitter:description" content="前言\r用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。\n環境\rOS: Windows 11 git: 2.40 Hugo: hugo_extended_0.117.0_windows-amd64.zip 步驟\r部屬Hugo 網站\r前往Hugo下載 hugo.exe 的 ZIP 檔 將ZIP檔解壓縮後取得「hugo.exe」，接者放置到準備的位置，例如:C:\\Hugo\\bin\\ 前往環境變數並於Path新稱值「C:\\Hugo\\bin\\」 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 11 # 檢查版本以及是否正確安裝 hugo version # 建立網站，這邊命名為 blog hugo new site blog cd blog # 下載主題 git clone https://github.com/vividvilla/ezhil.git .\\themes\\ezhil hugo new posts\\first-post.md echo theme = &#39;ezhil&#39; &gt;&gt; config.toml # -D 顯示草稿 hugo server -D 註:預設是沒有主題(Themes)，需要自己載，官網Themes有很多可以選 開啟瀏覽器，訪問http://localhost:1313/，順利的話可以看到套用主題的網站 上傳至GitHub\r註冊GitHub帳號 建立一個Repository Repository name: 填入「github-username.github.io」 ，注意github-username是要替換成GitHub帳號的名稱 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 cd blog # 建置網站，完成檔檔案會放置於「public」資料夾 hugo --cleanDestinationDir cd public git init git add . git branch -M main git remote add origin https://github.com/github-username/github-username.github.io.git git push -u origin main 開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站 參考資料\r用 Markdown 寫技術文件 - 編輯工具與平台選擇 Hugo 貼身打造個人部落格 ">
+<meta name="twitter:description" content="前言\r用Markdown寫文件已經成為工作的一部分了，手邊累積零散的筆記也見季都改由Markdown紀錄。 因此弄一個支援Markdown的部落格想法越來越強烈，經過一番研究後決定選Hugo + Github Pages。\n環境\rOS: Windows 11 git: 2.40 Hugo: hugo_extended_0.134.2_windows-amd64 步驟\r部屬Hugo 網站\r前往Hugo下載 hugo.exe 的 ZIP 檔 或是Hugo GitHub Releases頁面。 可以選擇一般版本的 Hugo 或是 Hugo Extended，兩個版本的差異在於有沒有內建支援SCSS、SASS。\n註: 建議直接選擇 Extended 版本，因為有許多的模板、主題都會用到 SCSS 或 SASS，可以省得之後再自己手動安裝的麻煩。\nex: hugo_extended_0.134.2_windows-amd64 將ZIP檔解壓縮後取得「hugo.exe」，接者放置到準備的位置，例如:C:\\Hugo\\bin\\ 前往環境變數並於Path新稱值「C:\\Hugo\\bin\\」 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 檢查Hugo版本以及環境變數是否正設定 hugo version # 建立網站，這邊命名為 blog hugo new site blog # 進入資料夾 cd blog # 下載要使用的主題，ex: hugo-theme-stack # 註:預設是沒有主題(Themes)，需要自己載，[官網Themes](https://themes.gohugo.io/)有很多可以選 git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack # option: 複製並採用 hugo-theme-stack範例中的hugo.yaml檔案及設定，取代hugo.toml # option: 複製 archetypes的檔案 # option: 複製既有文章 # option: 建立第一個文章 hugo new post\\python\\install\\install.md #啟動網站，-D 顯示草稿 hugo server -D 開啟瀏覽器，預設網址http://localhost:1313/，順利的話可以看到網站 上傳至GitHub\r註冊GitHub帳號 建立一個Repository Repository name: 填入「github-username.github.io」 ，注意github-username是要替換成GitHub帳號的名稱 開啟PowerShell並輸入以下指令 1 2 3 4 5 6 7 8 9 10 cd blog # 建置網站，完成檔檔案會放置於「public」資料夾 hugo --cleanDestinationDir cd public git init git add . git commit -m &#34;first commit&#34; git branch -M main git remote add origin https://github.com/github-username/github-username.github.io.git git push -u origin main 開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站 參考資料\r用 Markdown 寫技術文件 - 編輯工具與平台選擇 Hugo 貼身打造個人部落格 ">
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JK2JWTDB9"></script>
       <script>
         var doNotTrack = false;
@@ -35,7 +35,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -345,17 +345,22 @@
 </h2><ul>
 <li>OS: Windows 11</li>
 <li>git: 2.40</li>
-<li>Hugo: <a class="link" href="https://github.com/gohugoio/hugo/releases/tag/v0.117.0"  target="_blank" rel="noopener"
-    >hugo_extended_0.117.0_windows-amd64.zip</a></li>
+<li>Hugo: hugo_extended_0.134.2_windows-amd64</li>
 </ul>
 <h2 id="步驟">步驟
 </h2><h3 id="部屬hugo-網站">部屬Hugo 網站
 </h3><ol>
 <li>前往<a class="link" href="https://gohugo.io/installation/windows/"  target="_blank" rel="noopener"
     >Hugo下載 hugo.exe 的 ZIP 檔</a></li>
+<li>或是<a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+    >Hugo GitHub Releases頁面</a>。</li>
+<li>可以選擇一般版本的 Hugo 或是 Hugo Extended，兩個版本的差異在於有沒有內建支援SCSS、SASS。<br>
+註: 建議直接選擇 Extended 版本，因為有許多的模板、主題都會用到 SCSS 或 SASS，可以省得之後再自己手動安裝的麻煩。<br>
+ex: hugo_extended_0.134.2_windows-amd64</li>
 <li>將ZIP檔解壓縮後取得「hugo.exe」，接者放置到準備的位置，例如:C:\Hugo\bin\</li>
 <li>前往環境變數並於Path新稱值「C:\Hugo\bin\」</li>
-<li>開啟PowerShell並輸入以下指令
+<li>開啟PowerShell並輸入以下指令</li>
+</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -369,24 +374,36 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl"><span class="c1"># 檢查版本以及是否正確安裝</span>
+<pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl"><span class="c1"># 檢查Hugo版本以及環境變數是否正設定</span>
 </span></span><span class="line"><span class="cl">hugo version
 </span></span><span class="line"><span class="cl"><span class="c1"># 建立網站，這邊命名為 blog</span>
 </span></span><span class="line"><span class="cl">hugo new site blog
+</span></span><span class="line"><span class="cl"><span class="c1"># 進入資料夾</span>
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> blog
-</span></span><span class="line"><span class="cl"><span class="c1"># 下載主題</span>
-</span></span><span class="line"><span class="cl">git clone https://github.com/vividvilla/ezhil.git .<span class="se">\t</span>hemes<span class="se">\e</span>zhil
-</span></span><span class="line"><span class="cl">hugo new posts<span class="se">\f</span>irst-post.md
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">theme</span> <span class="o">=</span> <span class="s1">&#39;ezhil&#39;</span> &gt;&gt; config.toml
-</span></span><span class="line"><span class="cl"><span class="c1"># -D 顯示草稿</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 下載要使用的主題，ex: hugo-theme-stack</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 註:預設是沒有主題(Themes)，需要自己載，[官網Themes](https://themes.gohugo.io/)有很多可以選</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+</span></span><span class="line"><span class="cl"><span class="c1"># option: 複製並採用 hugo-theme-stack範例中的hugo.yaml檔案及設定，取代hugo.toml</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># option: 複製 archetypes的檔案</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># option: 複製既有文章</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># option: 建立第一個文章</span>
+</span></span><span class="line"><span class="cl">hugo new post<span class="se">\p</span>ython<span class="se">\i</span>nstall<span class="se">\i</span>nstall.md
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#啟動網站，-D 顯示草稿</span>
 </span></span><span class="line"><span class="cl">hugo server -D
 </span></span></code></pre></td></tr></table>
 </div>
-</div>註:預設是沒有主題(Themes)，需要自己載，<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
-    >官網Themes</a>有很多可以選</li>
-<li>開啟瀏覽器，訪問http://localhost:1313/，順利的話可以看到套用主題的網站</li>
+</div><ol>
+<li>開啟瀏覽器，預設網址<a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
+    >http://localhost:1313/</a>，順利的話可以看到網站</li>
 </ol>
 <h3 id="上傳至github">上傳至GitHub
 </h3><ol>
@@ -398,15 +415,16 @@
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl"><span class="nb">cd</span> blog
@@ -415,13 +433,15 @@
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> public
 </span></span><span class="line"><span class="cl">git init
 </span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;first commit&#34;</span>
 </span></span><span class="line"><span class="cl">git branch -M main
 </span></span><span class="line"><span class="cl">git remote add origin https://github.com/github-username/github-username.github.io.git
 </span></span><span class="line"><span class="cl">git push -u origin main
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
-<li>開啟瀏覽器，訪問http://github-username.github.io.git，順利的話可以看到網站</li>
+<li>開啟瀏覽器，訪問<a class="link" href="http://github-username.github.io.git"  target="_blank" rel="noopener"
+    >http://github-username.github.io.git</a>，順利的話可以看到網站</li>
 </ol>
 <h2 id="參考資料">參考資料
 </h2><ul>

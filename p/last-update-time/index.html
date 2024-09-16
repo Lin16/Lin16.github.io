@@ -10,7 +10,7 @@
 <meta property='og:description' content="前言\rHugo本身有「最後更新」功能，紀錄一下啟用步驟\n步驟\r開啟hugo.yaml並加入以下內容 1 2 3 4 5 6 7 8 9 10 11 12 13 # 利用git記錄的文件修改時間作為真實更新時間 # 傳回與給定頁面的最後一次提交相關的 Git 資訊 enableGitInfo: true frontmatter: lastmod: [&#39;:git&#39;, &#39;lastmod&#39;, &#39;date&#39;, &#39;publishDate&#39;] # 參數說明： # :git：git記錄的文件提交修改時間 # lastmod：文章裡lastmod字段 # :fileModTime：文件修改時間，會受自動部署的影響 # :defalut：預設時間 # 更多參數 # https://gohugo.io/content-management/front-matter/ 將「最後更新」位置變更 1 2 3 4 5 6 7 8 9 10 11 12 # 原本位置 # themes\\hugo-theme-stack\\layouts\\partials\\article\\components\\footer.html {{- if ne .Lastmod .Date -}} &lt;section class=&#34;article-lastmod&#34;&gt; {{ partial &#34;helper/icon&#34; &#34;clock&#34; }} &lt;span&gt; {{ T &#34;article.lastUpdatedOn&#34; }} {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated &#34;Jan 02, 2006 15:04 MST&#34; ) }} &lt;/span&gt; &lt;/section&gt; {{- end -}} # 剪下貼至想要的位置 # themes\\hugo-theme-stack\\layouts\\partials\\article\\components\\details.html 參考資料\rHugo Stack 主题添加「最后修改于」 ">
 <meta property='og:url' content='https://Lin16.github.io/p/last-update-time/'>
 <meta property='og:site_name' content='Max Lin&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2024-09-13T13:12:22&#43;08:00'/><meta property='article:modified_time' content='2024-09-13T13:12:22&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2024-09-13T13:12:22&#43;08:00'/><meta property='article:modified_time' content='2024-09-13T15:54:49&#43;08:00'/>
 <meta name="twitter:title" content="[Hugo]在文章中顯示「最後更新時間」">
 <meta name="twitter:description" content="前言\rHugo本身有「最後更新」功能，紀錄一下啟用步驟\n步驟\r開啟hugo.yaml並加入以下內容 1 2 3 4 5 6 7 8 9 10 11 12 13 # 利用git記錄的文件修改時間作為真實更新時間 # 傳回與給定頁面的最後一次提交相關的 Git 資訊 enableGitInfo: true frontmatter: lastmod: [&#39;:git&#39;, &#39;lastmod&#39;, &#39;date&#39;, &#39;publishDate&#39;] # 參數說明： # :git：git記錄的文件提交修改時間 # lastmod：文章裡lastmod字段 # :fileModTime：文件修改時間，會受自動部署的影響 # :defalut：預設時間 # 更多參數 # https://gohugo.io/content-management/front-matter/ 將「最後更新」位置變更 1 2 3 4 5 6 7 8 9 10 11 12 # 原本位置 # themes\\hugo-theme-stack\\layouts\\partials\\article\\components\\footer.html {{- if ne .Lastmod .Date -}} &lt;section class=&#34;article-lastmod&#34;&gt; {{ partial &#34;helper/icon&#34; &#34;clock&#34; }} &lt;span&gt; {{ T &#34;article.lastUpdatedOn&#34; }} {{ .Lastmod | time.Format ( or .Site.Params.dateFormat.lastUpdated &#34;Jan 02, 2006 15:04 MST&#34; ) }} &lt;/span&gt; &lt;/section&gt; {{- end -}} # 剪下貼至想要的位置 # themes\\hugo-theme-stack\\layouts\\partials\\article\\components\\details.html 參考資料\rHugo Stack 主题添加「最后修改于」 ">
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JK2JWTDB9"></script>
@@ -35,7 +35,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -305,7 +305,19 @@
                     閱讀時間: 1 分鐘
                 </time>
             </div>
-        </footer>
+        <section class="article-lastmod">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+            <span>
+                最後更新 2024-09-13 15:54 UTC&#43;8
+            </span>
+        </section></footer>
     
 
     
