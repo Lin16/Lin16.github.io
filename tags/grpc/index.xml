@@ -8,7 +8,7 @@
         <language>zh-tw</language>
         <copyright>Max Lin&#39;s Blog</copyright>
         <lastBuildDate>Wed, 18 Sep 2024 15:47:27 +0800</lastBuildDate><atom:link href="https://Lin16.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>gRPC</title>
+        <title>[gRPC][Python]gRPC介紹</title>
         <link>https://Lin16.github.io/p/grpc/</link>
         <pubDate>Wed, 18 Sep 2024 15:47:27 +0800</pubDate>
         
@@ -24,8 +24,8 @@ gRPC以 Remote Procedure Call (RPC) 模型為基礎是一種特定實作，可�
 gRPC 訊息是使用 Protobuf (一種有效率的二進位訊息格式) 進行序列化，又其使用 &amp;ldquo;Protocol Bufferes作為介面定義語言(interface definition language, IDL)&amp;quot;，因此在開發上可以更快速的在不同的語言、服務上互動。
 有別於一般open api使用url、http methods、參數等在client與server間互動，gRPC的IDL則更為直觀明確，&amp;ldquo;client與server端皆須使用同一份 .proto 檔案作為介面&amp;rdquo;。&lt;/p&gt;
 &lt;h2 id=&#34;環境&#34;&gt;環境
-&lt;/h2&gt;&lt;p&gt;Python: 3.10&lt;br&gt;
-OS: Windows 11&lt;br&gt;
+&lt;/h2&gt;&lt;p&gt;Python: 3.10
+OS: Windows 11
 Package:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;pip install grpcio&lt;/li&gt;
@@ -160,7 +160,8 @@ Package:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol&gt;
-&lt;li&gt;建立或取得greeter_server.py範本&lt;/li&gt;
+&lt;li&gt;建立或&lt;a class=&#34;link&#34; href=&#34;https://grpc.io/docs/languages/python/quickstart/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;取得&lt;/a&gt;greeter_server.py&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -255,6 +256,8 @@ Package:&lt;/p&gt;
     &gt;Python Quick start&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://jiepeng.me/2018/07/25/protocol-buffers-intro&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;初識 Protocol Buffers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://wenwender.wordpress.com/2022/03/26/python%E5%AF%A6%E4%BD%9Cgrpc%E9%80%9A%E8%A8%8A%E5%AF%A6%E4%BD%9C/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Python實作gRPC通訊實作&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
