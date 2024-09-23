@@ -2,28 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://Lin16.github.io/p/user/</loc>
+    <lastmod>2024-09-24T00:47:53+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/categories/</loc>
+    <lastmod>2024-09-24T00:47:53+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/post/</loc>
+    <lastmod>2024-09-24T00:47:53+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/tags/</loc>
+    <lastmod>2024-09-24T00:47:53+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/tags/ubuntu/</loc>
+    <lastmod>2024-09-24T00:47:53+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/categories/ubuntu/</loc>
+    <lastmod>2024-09-24T00:47:53+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/tags/user/</loc>
+    <lastmod>2024-09-24T00:47:53+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/p/time/</loc>
+    <lastmod>2024-09-24T00:25:19+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/tags/time/</loc>
+    <lastmod>2024-09-24T00:25:19+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/p/ufw/</loc>
+    <lastmod>2024-09-24T00:00:01+08:00</lastmod>
+  </url><url>
+    <loc>https://Lin16.github.io/tags/ufw/</loc>
+    <lastmod>2024-09-24T00:00:01+08:00</lastmod>
+  </url><url>
     <loc>https://Lin16.github.io/p/netplan/</loc>
     <lastmod>2024-09-19T16:25:08+08:00</lastmod>
   </url><url>
-    <loc>https://Lin16.github.io/categories/</loc>
-    <lastmod>2024-09-19T16:25:08+08:00</lastmod>
-  </url><url>
     <loc>https://Lin16.github.io/tags/netplan/</loc>
-    <lastmod>2024-09-19T16:25:08+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/categories/netplan/</loc>
-    <lastmod>2024-09-19T16:25:08+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/post/</loc>
-    <lastmod>2024-09-19T16:25:08+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/tags/</loc>
-    <lastmod>2024-09-19T16:25:08+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/tags/ubuntu/</loc>
-    <lastmod>2024-09-19T16:25:08+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/categories/ubuntu/</loc>
     <lastmod>2024-09-19T16:25:08+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/p/python-decorator/</loc>
@@ -45,12 +60,6 @@
     <lastmod>2024-09-18T15:47:27+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/p/install/</loc>
-    <lastmod>2024-09-16T13:05:31+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/tags/ubuntu-server/</loc>
-    <lastmod>2024-09-16T13:05:31+08:00</lastmod>
-  </url><url>
-    <loc>https://Lin16.github.io/categories/ubuntu-server/</loc>
     <lastmod>2024-09-16T13:05:31+08:00</lastmod>
   </url><url>
     <loc>https://Lin16.github.io/p/last-update-time/</loc>

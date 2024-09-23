@@ -7,20 +7,44 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <copyright>Max Lin&#39;s Blog</copyright>
-        <lastBuildDate>Thu, 19 Sep 2024 16:25:08 +0800</lastBuildDate><atom:link href="https://Lin16.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 24 Sep 2024 00:47:53 +0800</lastBuildDate><atom:link href="https://Lin16.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Ubuntu</title>
+        <link>https://Lin16.github.io/tags/ubuntu/</link>
+        <pubDate>Tue, 24 Sep 2024 00:47:53 +0800</pubDate>
+        
+        <guid>https://Lin16.github.io/tags/ubuntu/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>User</title>
+        <link>https://Lin16.github.io/tags/user/</link>
+        <pubDate>Tue, 24 Sep 2024 00:47:53 +0800</pubDate>
+        
+        <guid>https://Lin16.github.io/tags/user/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Time</title>
+        <link>https://Lin16.github.io/tags/time/</link>
+        <pubDate>Tue, 24 Sep 2024 00:25:19 +0800</pubDate>
+        
+        <guid>https://Lin16.github.io/tags/time/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Ufw</title>
+        <link>https://Lin16.github.io/tags/ufw/</link>
+        <pubDate>Tue, 24 Sep 2024 00:00:01 +0800</pubDate>
+        
+        <guid>https://Lin16.github.io/tags/ufw/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Netplan</title>
         <link>https://Lin16.github.io/tags/netplan/</link>
         <pubDate>Thu, 19 Sep 2024 16:25:08 +0800</pubDate>
         
         <guid>https://Lin16.github.io/tags/netplan/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Ubuntu</title>
-        <link>https://Lin16.github.io/tags/ubuntu/</link>
-        <pubDate>Thu, 19 Sep 2024 16:25:08 +0800</pubDate>
-        
-        <guid>https://Lin16.github.io/tags/ubuntu/</guid>
         <description></description>
         </item>
         <item>
@@ -37,14 +61,6 @@
         <pubDate>Wed, 18 Sep 2024 15:47:27 +0800</pubDate>
         
         <guid>https://Lin16.github.io/tags/grpc/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Ubuntu Server</title>
-        <link>https://Lin16.github.io/tags/ubuntu-server/</link>
-        <pubDate>Mon, 16 Sep 2024 12:36:25 +0800</pubDate>
-        
-        <guid>https://Lin16.github.io/tags/ubuntu-server/</guid>
         <description></description>
         </item>
         <item>
