@@ -10,7 +10,7 @@
 <meta property='og:description' content="前言\rDecorator(裝飾器) 本質上是一個 Python 函式或類 (class)，它可以讓其他函式或類，在不需要做任何代碼修改的前提下增加額外功能，裝飾器的返回值也是一個函式或類對象， 有了裝飾器，就可以抽離與函式功能本身無關的程式碼，放到裝飾器中並繼續重複使用。\n在 Python 中，使用「@」當做裝飾器使用的語法糖符號 ( 語法糖指的是將複雜的程式碼包裝起來的糖衣，也就是簡化寫法 )。\n說明\r以前如果需要測量function(簡稱func)執行時間的寫法如下:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 import time def sum(a, b): # 開始測量 start = time.localtime() print(time.strftime(&#34;%Y-%m-%d %H:%M:%S&#34;, start)) # 開始執行 print(&#34;開始執行 sum&#34;) result= a + b # 輸出結果 print(&#34;執行時間：%f 秒&#34; % (time.time() - time.mktime(start))) return result print(&#39;sum 執行結果&#39;, sum(1, 2)) # 2024-09-20 13:12:50 # 開始執行 sum # 執行時間：0.627351 秒 # sum 執行結果 3 看起來沒啥問題，但是如果要測量的func數量一多，要添加或修改就會變得麻煩。\n因此改良一下寫法如下:\n">
 <meta property='og:url' content='https://Lin16.github.io/p/python-decorator/'>
 <meta property='og:site_name' content='Max Lin&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2024-09-19T14:52:39&#43;08:00'/><meta property='article:modified_time' content='2024-09-19T14:52:39&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2024-09-19T14:52:39&#43;08:00'/><meta property='article:modified_time' content='2024-09-24T01:51:07&#43;08:00'/>
 <meta name="twitter:title" content="[Python][Decorator]Python Decorator(裝飾器)">
 <meta name="twitter:description" content="前言\rDecorator(裝飾器) 本質上是一個 Python 函式或類 (class)，它可以讓其他函式或類，在不需要做任何代碼修改的前提下增加額外功能，裝飾器的返回值也是一個函式或類對象， 有了裝飾器，就可以抽離與函式功能本身無關的程式碼，放到裝飾器中並繼續重複使用。\n在 Python 中，使用「@」當做裝飾器使用的語法糖符號 ( 語法糖指的是將複雜的程式碼包裝起來的糖衣，也就是簡化寫法 )。\n說明\r以前如果需要測量function(簡稱func)執行時間的寫法如下:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 import time def sum(a, b): # 開始測量 start = time.localtime() print(time.strftime(&#34;%Y-%m-%d %H:%M:%S&#34;, start)) # 開始執行 print(&#34;開始執行 sum&#34;) result= a + b # 輸出結果 print(&#34;執行時間：%f 秒&#34; % (time.time() - time.mktime(start))) return result print(&#39;sum 執行結果&#39;, sum(1, 2)) # 2024-09-20 13:12:50 # 開始執行 sum # 執行時間：0.627351 秒 # sum 執行結果 3 看起來沒啥問題，但是如果要測量的func數量一多，要添加或修改就會變得麻煩。\n因此改良一下寫法如下:\n">
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JK2JWTDB9"></script>
@@ -306,7 +306,19 @@
                     閱讀時間: 2 分鐘
                 </time>
             </div>
-        </footer>
+        <section class="article-lastmod">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+            <span>
+                最後更新 2024-09-24 01:51 UTC&#43;8
+            </span>
+        </section></footer>
     
 
     
